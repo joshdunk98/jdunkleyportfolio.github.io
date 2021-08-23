@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+
+            let currentTime = hour + ":" 
+                    + min;
+
+            document.getElementById("clock")
+                    .innerHTML = currentTime;
+        }
+
+
+
+    </script>
+
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ 
+ <body><nav>
+  <div class="nav-bar">
+   <a href="index.html">Home</a>
+   <a href="experience.html">Experience</a>
+   <a href="projects.html">Projects</a>
+   <a class="active" href="courses.html">Courses</a>
+   <a href="resume.html">Resume</a>
+   <div id="clock" onload="showTime()"></div>
+  </div>
+ </nav>   
+     
+<body  class="cool-black">
+
+ <div class="courses main">
+  <table border="5">
+   <tbody><tr>
+    <th class="courseid">CourseID</th>
+    <th>Name</th>
+    <th>School</th>
+    <th>Status</th>
+    <th>Grade</th>
+    <th>Description</th>
+   </tr><tr>
+    <td class="courseid">COSC 102</td>
+    <td>Introduction to Computer Science</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Problem solving and algorithm development. Organization and characteristics of modern digital computers with emphasis on software engineering, building abstractions with procedures and data, and programming in a modern computer language.</td>
+   </tr><tr>
+    <td class="courseid">COSC 130</td>
+    <td>Computer Organization</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Number systems, Boolean algebra, combinational and sequential circuits, registers, processor functional units and control, pipelining, memory and caching, stored program computing, memory management, computer system organization, and assembly language programming.</td>
+   </tr><tr>
+    <td class="courseid">COSC 140</td>
+    <td>Data Structures &amp; Algorithms I</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Advanced problem solving and algorithm development, programming, data structures and applications, I/O techniques, lists, queues, stacks, hash tables, algorithms, files.</td>
+   </tr><tr>
+    <td class="courseid">COSC 302</td>
+    <td>Data Structures &amp; Algorithms II</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Design, analysis, and implementation of fundamental algorithms and data structures, including trees and graphs.</td>
+   </tr><tr>
+    <td class="courseid">COSC 312</td>
+    <td>Algorithm Analysis &amp; Automata</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Counting and combinatorics, with applications to the analysis of algorithms. Introduction to finite automata and regular languages, and to pushdown automata and context free grammars.</td>
+   </tr><tr>
+    <td class="courseid">COSC 317</td>
+    <td>Honors: Discrete Structures</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Sets, functions, relations, equivalence relations, partial orderings and proof techniques, especially mathematical induction. Application of proof techniques to prove correctness of algorithms. Introduction to basic counting and combinatorics.</td>
+   </tr><tr>
+    <td class="courseid">COSC 340</td>
+    <td>Software Engineering</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Introduction to software processes that can be used on large projects to help design, manage, maintain, and test software.</td>
+   </tr><tr>
+    <td class="courseid">COSC 360</td>
+    <td>Systems Programming</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">In-depth introduction to C and its use in system programming. Introduction to memory and process layout, system calls, buffering, file I/O, file systems, directories, metadata, assembly code, stack frames, memory management, process management, and interprocess communication.</td>
+   </tr><tr>
+    <td class="courseid">COSC 361</td>
+    <td>Operating Systems</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Threads, operating system structure, process management, scheduling, synchronization, deadlock, memory management, virtual memory and demand paging, file system management and implementation, mass storage structure, protection, security, and distributed systems.</td>
+   </tr><tr>
+    <td class="courseid">COSC 365</td>
+    <td>Programming Languages &amp; Systems</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Language paradigms (procedural, functional, object-oriented, logic), language design and implementation issues and language issues related to parallelism.</td>
+   </tr><tr>
+    <td class="courseid">COSC 377</td>
+    <td>Honors: Inroduction to Scientific Computing</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">The design, analysis, and implementation of numerical algorithms for solving problems in science and engineering. Emphasis on program design, including data structures, computational complexity, scientific computing environments, and high-performance software packages.</td>
+   </tr><tr>
+    <td class="courseid">COSC 420</td>
+    <td>Biologically-Inspired Computation</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Recent developments in computational methods inspired by nature, such as neural networks, genetic algorithms, evolutionary programming, ant-swarm optimization, artificial immune systems, swarm intelligence, cellular automata, multi-agent systems, cooperation, and competition.</td>
+   </tr><tr>
+    <td class="courseid">COSC 425</td>
+    <td>Introduction to Machine Learning</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">This course covers the theory and practice of machine learning from a variety of perspectives. We cover topics such as learning decision trees, neural network learning, statistical learning methods, genetic algorithms, Bayesian learning methods, explanation-based learning, and reinforcement learning.</td>
+   </tr><tr>
+    <td class="courseid">COSC 445</td>
+    <td>Fundamentals of Digital Archeology</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">This is an advanced topic course focused on developing multi-disciplinary skills of discovering, retrieving, analyzing, and presenting operational data. Students will use critical thinking and intense practice solving real-world problems to recognize and address key operational issues: the lack of context, missing observations, and incorrect values.</td>
+   </tr><tr>
+    <td class="courseid">COSC 465</td>
+    <td>Databases &amp; Scripting Languages</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Introduction to database theory, models, and query formation. Survey of scripting languages, their uses, and their interconnectivity with databases.</td>
+   </tr><tr>
+    <td class="courseid">ECE 313</td>
+    <td>Probability &amp; Random Variables</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Probability axioms, Bayes’ theorem. Discrete and continuous random variables. Probability mass functions, density functions, and joint distributions. Central limit theorem. Expectation, variance, covariance, and correlation.</td>
+   </tr><tr>
+    <td class="courseid">ECE 463</td>
+    <td>Introduction to Data Centers</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Technologies and best practices in data center structure, management and maintenance. Topics include datacenter structure and design, requirements, performance, security, power &amp; cooling, storage systems, networking, capacity/workload management, testing and analysis.</td>
+   </tr><tr>
+    <td class="courseid">MATH 142</td>
+    <td>Calculus II</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Single variable calculus especially for students of science, engineering, mathematics, and computer science. Integral calculus with applications.</td>
+   </tr><tr>
+    <td class="courseid">MATH 231</td>
+    <td>Differential Equations I</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">First course emphasizing solution techniques. Includes first-order equations and applications, theory of linear equations, equations with constant coefficients, Laplace transforms, and series solutions.</td>
+   </tr><tr>
+    <td class="courseid">MATH 241</td>
+    <td>Calculus III</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Calculus of functions in two or more dimensions. Includes solid analytic geometry, partial differentiation, multiple integration, and selected topics in vector calculus.</td>
+   </tr><tr>
+    <td class="courseid">MATH 251</td>
+    <td>Matrix Algebra I</td>
+    <td>University of Tennessee, Knoxville</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">First course in the algebra of simultaneous linear equations and matrices. Includes Gaussian elimination, determinants, vector spaces, linear transformations, eigenvalues, and eigenvectors.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 5350</td>
+    <td>Introduction to Artificial Intelligence</td>
+    <td>Middle Tennessee State University</td>
+    <td>in progress</td>
+    <td>-</td>
+    <td id="description">Principles and applications of artificial intelligence. Principles include search strategies, knowledge representation, reasoning, and machine learning. Applications include expert systems and natural language understanding.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 5360</td>
+    <td>Intelligent Robot Systems</td>
+    <td>Middle Tennessee State University</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description"> Principles and applications of intelligent mobile robotics. Various architectures used in the basic AI robotics development paradigms and basic techniques used for robot navigation.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 5560</td>
+    <td>Database Management Systems</td>
+    <td>Middle Tennessee State University</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">The relational and object models of database design along with relational algebras, data independence, functional dependencies, inference rules, normal forms, schema design, modeling languages, query languages, and current literature.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 5700</td>
+    <td>Software Engineering</td>
+    <td>Middle Tennessee State University</td>
+    <td>in progress</td>
+    <td>-</td>
+    <td id="description">Consists of a theoretical component and a practical component. Topics include the history of software engineering, software development paradigms and life cycles, and computer-aided software engineering (CASE).</td>
+   </tr><tr>
+    <td class="courseid">CSCI 6100</td>
+    <td>Analysis of Algorithms</td>
+    <td>Middle Tennessee State University</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Topics include the analysis and design of algorithms; efficiency of algorithms; design approaches including divide and conquer, dynamic programming, the greedy approach, and backtracking; P and NP; and algorithms in many areas of computing.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 6330</td>
+    <td>Parallel Processing Concepts</td>
+    <td>Middle Tennessee State University</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Parallel processing and programming in a parallel environment. Topics include classification of parallel architectures, actual parallel architectures, design and implementation of parallel programs, and parallel software engineering.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 6560</td>
+    <td>Selected Topic: Database Security</td>
+    <td>Middle Tennessee State University</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Security, profiles, password policies, privileges and roles, Virtual Private Databases, and auditing. The course also covers a list of advanced topics, such as SQL injection. Database management security issues such as securing the DBMS, enforcing access controls, and related issues are also covered.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 6620</td>
+    <td>Research Methods in Computer Science</td>
+    <td>Middle Tennessee State University</td>
+    <td>completed</td>
+    <td>A</td>
+    <td id="description">Emphasizes communication skills, creative thinking, problem solving, and integration of knowledge from prior computer science courses. Includes a study of computer science research tools.</td>
+   </tr><tr>
+    <td class="courseid">CSCI 7850</td>
+    <td>Deep Learning</td>
+    <td>Middle Tennessee State University</td>
+    <td>in progress</td>
+    <td>-</td>
+    <td id="description">Various deep learning neural network architectures, theory, and applications including multilayer, convolution, recurrent, transformer, and generative models. Model training, validation, and deployment methodologies also studied.</td>
+   </tr>   
+   </tbody>
+  </table>
+  </div>
+ 
+
+</body>
+</html>
