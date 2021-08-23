@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+
+            let currentTime = hour + ":" 
+                    + min;
+
+            document.getElementById("clock")
+                    .innerHTML = currentTime;
+        }
+
+
+    </script>
+
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <nav>
+  <div class="nav-bar">
+   <a class="active" href="index.html">Home</a>
+   <a href="experience.html">Experience</a>
+   <a href="projects.html">Projects</a>
+   <a href="courses.html">Courses</a>
+   <a href="resume.html">Resume</a>
+   <div id="clock" onload="showTime()"></div>
+  </div>
+ </nav>    
+
+ 
+   <body>
+
+   <section class="cool-black">
+       <div class="about main"><img class="profile rounded-corners" id="Josh" src="uploads/imgs/profile_one.jpg" alt="Josh Dunkley"></div>
+   </section>
+       
+   <section class="cool-black">
+       <div class="about">
+           <p style="color:white">My name is Josh Dunkley, and I am a second-year graduate student at MTSU majoring in Computer Science. I am passionate about many things in life, but if I had to list my top three, 
+          they would be my relationship with Jesus, my relationship with family and friends, and my pursuit of learning anything and everything that interests me. I enjoy learning how to 
+          build neat and complex things, and I'm hoping to gain more practical experience this upcoming year in graduate school through various software engineering projects. While my interests
+          lie in machine learning, I am open to any type of software engineering role in order to gain valuable industry experience and expand my horizons on what interests me.</p> 
+           
+           <p> This website will be continually updated as Josh gains more experience in school, work, and web development.</p>
+       </div>
+   </section>
+       
+       
+    <section id="orange-top">
+
+        <div class="ut-orange">
+            <div class="orange" id="orange-bottom">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+       
+    <section id="blue-bottom">
+        <div class="mtsu-blue">
+            <div class="blue" id="blue-top">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+
+
+   <section class="cool-black">
+       <div class="contact">
+        <h2>Contact Info</h2>
+        <p>If you have any questions and would like to reach out, please text or email me! Whether it be jobs or talking about Jesus, I enjoy good conversation.</p>
+
+        <div><i class="fa fa-phone" aria-hidden="true"></i> (615)-796-5444</div>
+        <div><i class="fa fa-envelope" aria-hidden="true"></i>  joshua.dunkley98@gmail.com</div>
+        <div><i class="fa fa-linkedin" aria-hidden="true"></i>  www.linkedin.com/in/joshua-dunkley</div>
+       </div>
+   </section>
+   </body>
+</html>

@@ -1,0 +1,298 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 20, 2021, 6:30:17 PM
+    Author     : Mordecai
+*/
+
+
+/* Add a blue(MTSU) background color to the body of each page */
+body {
+    /*background-color: #0070FF; MTSU blue */
+    
+    background-color: #d4e4f7;
+    margin: 0;
+    
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 100px 20vw;
+}
+
+div.main {
+    margin: -10px 40px;
+}
+
+/* Add a black background color to the top navigation */
+.nav-bar {
+  background-color: #333;
+  overflow: hidden;
+ 
+  margin-left:-10px;
+  margin-right:-10px;
+}
+
+/* Style the links inside the navigation bar */
+.nav-bar a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.nav-bar #clock{
+  float:right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/* Add a color to the active/current link */
+.nav-bar a.active {
+  background-color:  #0070FF;
+  color: white;
+}
+
+h1 {
+    margin:30px;
+}
+
+
+table {
+    margin: 10px 80px; /*top-bottom px  left-right px*/
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+th {
+  padding: 15px 20px;
+  text-align: left;
+  background-color: #0070FF;
+  color: white;
+}
+
+td{
+    border: 1px solid #ddd;
+    padding: 20px;
+    white-space: wrap;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.courseid {
+    width: 8%;
+}
+
+.start-date {
+    width:9%;
+}
+
+.end-date {
+    width:9%;
+}
+
+.experience {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#description {
+    width:38%;
+}
+
+div.resume iframe {
+    margin: 20px auto;
+    display: block;
+    border-style:none;
+}
+
+#resumepdf {
+    width: 60%;
+    height: 1000px;
+    align-content: center;
+}
+
+div #img-profile {
+    /*border: 5px solid #555;*/
+    text-align: center;
+}
+
+.orange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+#orange-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 500px;
+}
+
+#orange-top {
+    margin-bottom: 275px;
+}
+
+.blue {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.blue svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 500px;
+}
+
+#blue-bottom {
+    margin-top: 275px;
+}
+
+
+.orange .shape-fill {
+    fill: #FF8200;
+}
+
+.blue .shape-fill {
+    fill: #016EB6;
+}
+
+
+.school {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cool-black {
+    background-color: #171717;
+    text-align:center;
+}
+
+.ut-orange {
+    background-color: #ff8200;
+    text-align:center;
+}
+
+.mtsu-blue {
+    background-color: #016eb6;
+    text-align:center;
+}
+
+#UTK {
+    position: absolute;
+    padding: 0 auto;
+    width: 80%;
+}
+
+#MTSU {
+    padding: 0 auto;
+    width: 80%;
+}
+
+#Josh{
+    padding: 0 auto;
+    width: 35%;
+    border: 3px solid #555;
+    margin-bottom: -50px;
+}
+
+
+img.rounded-corners {
+    display: inline-block;
+    /*border: 3px solid #555;*/
+    margin:5px auto;
+    border-radius: 50%;
+    object-fit: contain;
+    width: 30%;
+    height: 30%;
+}
+
+div.home {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 30px 0px;
+    padding: 15px 15%;
+}
+
+
+div.about {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: -50px;
+}
+
+div.contact {
+    text-align: left;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 15px 5%;
+}
+
+.fa {
+    border: 5px solid #555;
+    border-radius: 50%;
+    margin: 10px 30px;
+    padding: 10px;
+}
+
+
+div.courses {
+        margin: 20px auto;
+}
+
+div.experience {
+        margin: 20px auto;
+}
+
+div.projects {
+   margin: 20px auto;
+   color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 15px 5%;
+}
