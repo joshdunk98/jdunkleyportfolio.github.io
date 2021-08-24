@@ -237,7 +237,7 @@ div #img-profile {
 
 #Josh{
     padding: 0 auto;
-    width: 35%;
+    width: 40%;
     border: 3px solid #555;
     margin-bottom: -50px;
 }
@@ -251,6 +251,11 @@ img.rounded-corners {
     object-fit: contain;
     width: 30%;
     height: 30%;
+}
+
+#profileimg {
+    background-image: url("../uploads/imgs/obwave.png");
+    background-size: auto 100%;
 }
 
 div.home {
