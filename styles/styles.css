@@ -127,8 +127,12 @@ tr:nth-child(odd) {
 }
 
 
-#description {
+.description {
     width:38%;
+}
+
+.proj {
+    width:50%;
 }
 
 div.resume iframe {
