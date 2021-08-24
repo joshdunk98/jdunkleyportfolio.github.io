@@ -96,6 +96,7 @@ th {
 }
 
 td{
+    color: black;
     border: 1px solid #ddd;
     padding: 20px;
     white-space: wrap;
