@@ -90,7 +90,7 @@ table {
 
 th {
   padding: 15px 20px;
-  text-align: left;
+  text-align: center;
   background-color: #0070FF;
   color: white;
 }
@@ -131,7 +131,7 @@ tr:nth-child(odd) {
     width:38%;
 }
 
-.proj {
+.project-description {
     width:50%;
 }
 
